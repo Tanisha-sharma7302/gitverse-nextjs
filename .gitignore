@@ -20,6 +20,10 @@ dist-worker/
 tsconfig.tsbuildinfo
 .swc/
 
+# embedded repos (not part of this project)
+VISUALAIZE/
+devtrack/
+
 # misc
 .DS_Store
 *.pem
