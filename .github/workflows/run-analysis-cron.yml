@@ -55,7 +55,10 @@ jobs:
             const client = new PrismaClient();
             client.\$queryRaw\`SELECT 1\`
               .then(() => { console.log('Database health check passed'); process.exit(0); })
-              .catch((err) => { console.error('Database health check failed:', err.message); process.exit(0); // CI: skip db check });
+              .catch((err) => { 
+              console.error('Database health check failed:', err.message); 
+              process.exit(0); 
+              });
           "
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
