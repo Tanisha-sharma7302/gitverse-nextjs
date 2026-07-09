@@ -5,7 +5,6 @@ import { CodeMetrics } from './CodeMetrics'
 import RepositoryLearningPath from "./RepositoryLearningPath";
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary'
 import RepositoryEvolutionTimeline from "./RepositoryEvolutionTimeline";
-import ContributorIssueRecommendations from "./ContributorIssueRecommendations";
 import DependencyVulnerabilityScanner from "./DependencyVulnerabilityScanner";
 import CodeComplexityAnalyzer from "./CodeComplexityAnalyzer";
 import ContributorOnboardingChatbot from "./ContributorOnboardingChatbot";
@@ -265,13 +264,12 @@ export function RepositoryInsights({
       <CodeMetrics repository={repository} />
 
       {/* AI Repository Learning Path */}
-      <RepositoryLearningPath repository={repository} />
+      <RepositoryLearningPath />
 
       {/* Repository Evolution Timeline */}
       <RepositoryEvolutionTimeline />
 
       {/* Contributor Skill-Based Issue Recommendations */}
-      <ContributorIssueRecommendations />
 
       {/* AI Code Complexity Analyzer */}
       <CodeComplexityAnalyzer />
